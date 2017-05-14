@@ -98,10 +98,9 @@ library(ggplot2)
 library(maps)
 library(rgeos)
 library(maptools)
-linrary(shapefiles)
+library(shapefiles)
+library(rgdal)
 gpclibPermit()
-
-# setwd(system.file("shapes", package="maptools"))
                     
 #Load in your great circles (see above for link on how to do this). You need a file that has long, lat, airline and group. The group variable is produced as part of the Anthrospace tutorial.
 gcircles
@@ -110,7 +109,8 @@ gcircles
 worldmap
 
 #Load in your urban areas shapefile from Natural Earth Data
-urbanareasin <- read.shp("ne_10m_urban_areas.shp")
+#BUG BUG BUG
+urbanareasin <- read.OGR("ne_10m_urban_areas.shp")
 
 #Simplify these using the gsimplify function from the rgeos package
 simp
