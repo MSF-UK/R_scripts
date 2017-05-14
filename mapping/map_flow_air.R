@@ -1,4 +1,5 @@
 # source: http://spatialanalysis.co.uk/2012/06/mapping-worlds-biggest-airlines/
+# source : http://web.stanford.edu/~cengel/cgi-bin/anthrospace/great-circles-on-a-recentered-worldmap-in-ggplot
 
 # Get the would boudariea and flight database
 # http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/10m-urban-area.zip
