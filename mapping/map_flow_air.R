@@ -1,7 +1,9 @@
 # source: http://spatialanalysis.co.uk/2012/06/mapping-worlds-biggest-airlines/
 # source : http://web.stanford.edu/~cengel/cgi-bin/anthrospace/great-circles-on-a-recentered-worldmap-in-ggplot
 
-################################
+################
+## FIRST STEP ##
+################
 
 library(maps)
 library(geosphere)
@@ -82,8 +84,10 @@ theme(panel.background = element_blank(), panel.grid.minor = element_blank(), pa
 ylim(-60, 90) +
 coord_equal()
 
-
-################################
+                    
+#################
+## SECOND STEP ##
+#################
 
 # Get the would boudariea and flight database
 # http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/10m-urban-area.zip
@@ -94,16 +98,19 @@ library(ggplot2)
 library(maps)
 library(rgeos)
 library(maptools)
+linrary(shapefiles)
 gpclibPermit()
 
+# setwd(system.file("shapes", package="maptools"))
+                    
 #Load in your great circles (see above for link on how to do this). You need a file that has long, lat, airline and group. The group variable is produced as part of the Anthrospace tutorial.
 gcircles
-
+  
 #Get a world map
 worldmap
 
 #Load in your urban areas shapefile from Natural Earth Data
-urbanareasin
+urbanareasin <- read.shp("ne_10m_urban_areas.shp")
 
 #Simplify these using the gsimplify function from the rgeos package
 simp
