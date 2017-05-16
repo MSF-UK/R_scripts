@@ -9,3 +9,14 @@ R scripts for MSF
 [Mapping flows in R, World Airlines](https://github.com/MSF-UK/R_scripts/blob/master/mapping/map_flow_air.R)
 
 <img src="https://github.com/MSF-UK/R_scripts/blob/master/mapping/map_flow_air.jpg" width="250">
+
+
+## Useful links
+
+### Mapping in R 
+https://rstudio.github.io/leaflet/
+https://github.com/ropensci/geojsonio
+https://ropensci.org/packages/
+https://ropensci.org/tutorials/geojsonio_tutorial.html
+
+###
