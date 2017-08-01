@@ -1,4 +1,5 @@
 # R Code for LLITN KAP on Dharma
+# version 1.0 #
 # Derek Johnson
 
 library(psych)
