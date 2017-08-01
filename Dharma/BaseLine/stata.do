@@ -1,4 +1,6 @@
 * Baseline health / mortality survey template analysis code
+* Version 1.0
+* John Guzek
 
 * Housekeeping - alter the first line to the correct filepath for the dataset
 cd "D:\Users\USERNAME\Desktop\Uganda\Baseline health survey\Datasets\Stata"
